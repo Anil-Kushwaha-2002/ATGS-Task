@@ -23,6 +23,8 @@ Language	  Python 3.x, JavaScript (ES6)
 
 ### Backend Setup (Django)
 ```bash
+Clone Repository
+git clone https://github.com/<your-username>/Backend
 cd backend
 python -m venv venv
 venv\Scripts\activate   # (Windows)
@@ -40,7 +42,8 @@ API will be available at:
 
 http://127.0.0.1:8000/api/
 ```
-️### Frontend Setup (React)
+### Frontend Setup (React)
+
 ```bash
 Open a new terminal:
 
@@ -97,7 +100,7 @@ venv\Scripts\activate   # or source venv/bin/activate
 pip install -r requirements.txt
 
 3️⃣ Run the Thumbnail Generator
-python pipeline.py --input input --output output --size 300x300
+python pipeline.py --consumer consumer --producer producer --size 300x300
 
 
 ✅ Example Output:
@@ -105,5 +108,5 @@ python pipeline.py --input input --output output --size 300x300
 Processing 10 images...
 ✅ sample1.jpg → sample1_thumb.jpg
 ✅ sample2.png → sample2_thumb.png
-All thumbnails generated successfully in /output/
+All thumbnails generated successfully in /producer/
 ```
